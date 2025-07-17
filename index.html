@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Página com Barra Lateral</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <aside>
+        <h2>Escalas</h2>
+        <nav>
+            <a onclick="trocarEscala(1)">Sobreaviso</a>
+            <a onclick="trocarEscala(2)">Sgt Dia</a>
+            <a onclick="trocarEscala(3)">Cmt Gda</a>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="subtitulo">
+            <h2 id="tituloEscala"></h2>
+        </div>
+
+        <div class="zoom-container">
+            <a href="#zoom">
+                <img id="imagemPrincipal" src="/assets/images/logo11bia.png" alt="Imagem Principal">
+            </a>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="zoom" class="lightbox">
+            <a href="#">×</a>
+            <img id="imagemZoom" src="/assets/images/logo11bia.png" alt="Imagem Ampliada">
+        </div>
+
+    </main>
+
+    <script src="/assets/js/index.js"></script>
+
+</body>
+
+</html>
