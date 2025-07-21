@@ -67,7 +67,7 @@ h2#tituloEscala img {
     align-items: center;
 }
 
-.imagem-container img {
+.zoom-container img {
     max-width: 100%;
     max-height: 70vh;
     border-radius: 10px;
@@ -91,8 +91,6 @@ h2#tituloEscala img {
 }
 
 .lightbox img {
-    width: auto;
-    height: auto;
     max-width: 100%;
     max-height: 95vh;
     border-radius: 10px;
@@ -109,12 +107,12 @@ h2#tituloEscala img {
 
 @keyframes zoomIn {
     from {
-        transform: scale(2.0);
+        transform: scale(0.8);
         opacity: 0;
     }
 
     to {
-        transform: scale(1.8);
+        transform: scale(2.8);
         opacity: 1;
     }
 }
