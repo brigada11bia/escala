@@ -10,13 +10,13 @@ function trocarEscala(secao) {
     };
 
     const imagens = {
-        1: '/assets/images/previsao_sobreaviso.png',
-        2: '/assets/images/previsao_sgt_dia.png',
-        3: '/assets/images/previsao_cmt_gda.png'
+        1: './assets/images/previsao_sobreaviso.png',
+        2: './assets/images/previsao_sgt_dia.png',
+        3: './assets/images/previsao_cmt_gda.png'
     };
 
     titulo.innerHTML = `
-    <img src="/assets/images/logo11bia.png" alt="Ícone"> ${titulos[secao]}
+    <img src="./assets/images/logo11bia.png" alt="Ícone"> ${titulos[secao]}
   `;
     imagem.src = imagens[secao];
     imagemZoom.src = imagens[secao]; // <== ESSENCIAL PARA O ZOOM FUNCIONAR CORRETAMENTE
